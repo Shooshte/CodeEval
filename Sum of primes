@@ -1,0 +1,23 @@
+// Write a program which determines the sum of the first 1000 prime numbers.
+
+var števila = [];
+var seštevek = 0;
+
+function NajdiPraštevilo(num) {
+	if(num < 2) return false;
+	for(var x = 2; x<num; x++) {
+	if (num % i == 0) return false;
+	}
+	števila.push(num);
+}
+
+for(var i=0;števila.length<1000;i++) {
+	NajdiPraštevilo(i);
+}
+
+for(var t=0;t<števila.length; t++) {
+	seštevek += števila[t];
+}	
+
+console.log(seštevek);
+
