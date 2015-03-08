@@ -1,0 +1,15 @@
+var fs  = require("fs");
+fs.readFileSync(process.argv[2])
+    .toString()
+    .split('\n')
+    .forEach(function (line) {
+        if (line !== "") {
+            var output = [];
+            output.push(line[0]);
+            for(x=1;x<line.length;x++) {
+                var y = x-1; 
+                if(line[y] !== line[x]) output.push(line[x]);   
+            }
+            console.log(output);
+        }
+})
