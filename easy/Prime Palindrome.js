@@ -6,7 +6,7 @@ for (x = 0; x < 1000; x++) {
     Prime(x);
 }
 
-for (y = 0; y < primes.length; y ++) {
+for (y = 0; y < primes.length; y++) {
     if (checkPalindrom(primes[y].toString())) {
         palindromes.push(primes[y].toString());
     }
